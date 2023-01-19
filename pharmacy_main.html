@@ -8,19 +8,47 @@
     <link rel="stylesheet" href="pharmacy_styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Pharmacy</h1>
-    </div>
+    <!--Header section-->
+    <h1 class="header">Pharmacy</h1>
 
+    <!--Menu items and navigation bar section-->
     <ul>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#OurMedicines">Our Medicines</a></li>
-        <li><a href="#HealthCare">Health Care</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-button">Our Medicines</a>
+            <div class="dropdown-items">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cold & Cough</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-button">Health Care</a>
+            <div class="dropdown-items">
+                <a href="#">Baby Care</a>
+                <a href="#">Skin Care</a>
+                <a href="#">Home Care</a>
+                <a href="#">Personal Care</a>
+                <a href="#">Pet Care</a>
+            </div>
+        </li>
         <li><a href="#LabTest">Lab Test</a></li>
     </ul>
-    
-    <div class="footer">
-        <h5>@copyright. Only for demonstration purposes</h5>
-    </div>
+   
+    <!--Images to display as animation section-->
+    <section class="advertisements">
+        <div id="images">
+            <figure>
+                <img src="./Images/Animation/ani1.jpg">
+                <img src="./Images/Animation/ani2.png">
+                <img src="./Images/Animation/ani3.jpg">
+                <img src="./Images/Animation/ani4.jpg">
+                <img src="./Images/Animation/ani5.jpg">
+            </figure>
+        </div>
+    </section>
+    <!--Footer section-->
+    <h5 class="footer">@copyright. Only for demonstration purposes</h5>
+
 </body>
 </html>
