@@ -12,7 +12,29 @@
     <h1 class="header">Pharmacy</h1>
 
     <!--Menu items and navigation bar section-->
-    <ul>
+    <nav class="nav-bar">
+        <a href="#Home" class="nav-item">Home</a>
+        <div class="dropdown-menu">
+            <button class="dropdown-btn">Our Medicines</button>
+            <div class="menu-items">
+                <a class="tohide" href="#">Fever</a>
+                <a class="tohide" href="#">Muscle Pains</a>
+                <a class="tohide" href="#">Cold & Cough</a>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <button class="dropdown-btn">Health Care</button>
+            <div class="menu-items">
+                <a class="tohide" href="#">Baby Care</a>
+                <a class="tohide" href="#">Skin Care</a>
+                <a class="tohide" href="#">Home Care</a>
+                <a class="tohide" href="#">Personal Care</a>
+                <a class="tohide" href="#">Pet Care</a>
+            </div>
+        </div>
+        <a href="#Home" class="nav-item">Lab Test</a>
+    </nav>
+    <!-- <ul>
         <li><a href="#Home">Home</a></li>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-button">Our Medicines</a>
@@ -33,20 +55,18 @@
             </div>
         </li>
         <li><a href="#LabTest">Lab Test</a></li>
-    </ul>
-   
+    </ul> -->
+
     <!--Images to display as animation section-->
-    <section class="advertisements">
-        <div id="images">
-            <figure>
-                <img src="./Images/Animation/ani1.jpg">
-                <img src="./Images/Animation/ani2.png">
-                <img src="./Images/Animation/ani3.jpg">
-                <img src="./Images/Animation/ani4.jpg">
-                <img src="./Images/Animation/ani5.jpg">
-            </figure>
-        </div>
-    </section>
+ 
+    <div class="images">
+        <img class="ani1" src="./Images/Animation/ani1.jpg">
+        <img class="ani2" src="./Images/Animation/ani2.png">
+        <img class="ani3" src="./Images/Animation/ani3.jpg">
+        <img class="ani4" src="./Images/Animation/ani4.jpg">
+        <img class="ani5" src="./Images/Animation/ani5.jpg">
+    </div>
+
     <!--Footer section-->
     <h5 class="footer">@copyright. Only for demonstration purposes</h5>
 
