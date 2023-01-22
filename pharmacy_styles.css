@@ -1,95 +1,91 @@
-*{
-    margin:0;
-    padding:0;
-}
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 140px;
+   z-index: 1;
+   background: #3b3a3a;
+   -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+   -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
 
+ }
+ 
+ .header__content-text {
+   text-align: center;
+   color:whitesmoke;
+   font-size: 40px;
+ }
+ 
+ .page__content-container {
+   margin: 100px auto;
+   width: 100%;
+   padding: 40px;
+ }
 
-.header{
-    /* position: fixed; */ position:relative fixed;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(110, 108, 108);
-    color: whitesmoke;
-    font-size: 70px;
-    margin:0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-top:50px;
-}
-
-.footer{
-    padding: auto;
-    text-align: center;
-    background-color: rgb(90, 25, 25);
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    position:fixed;
-    bottom:0px;
-    width:100%
-}
-
+ 
 .dropdown-btn {
-    background-color: #3f4141;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
- }
+   background-color: #7c7e7e;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   font-weight: bold;
+   border: none;
+}
 
- .dropdown-menu {
-    position: relative;
-    display: inline-block;
- }
- .menu-items {
-    display: none;
-    position: absolute;
-    background-color: #9fa1a1;
-    min-width: 160px;
-    z-index: 1;
- }
- .nav-bar{
-    background-color: #3f4141;
-    /* position:fixed; */position:fixed;
-    /* top:80px; */
-    width: 100%;
-    z-index: 9999;
- }
- .nav-item,.tohide{
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
- }
- .tohide{
-    display: block;
- }
- .nav-item{
-    display: inline-block;
- }
- .tohide:hover{
-    background-color: burlywood;
- }
- .dropdown-menu:hover .menu-items {
-    display: block;
- }
- .dropdown-menu:hover .dropdown-btn {
-    background-color: black;
- }
+.dropdown-menu {
+   position: relative;
+   display: inline-block;
+}
+.menu-items {
+   display: none;
+   position: absolute;
+   background-color: #9fa1a1;
+   min-width: 160px;
+   z-index: 1;
+}
+.nav-bar{
+   background-color: #7c7e7e;
+   /* position:fixed; */position:fixed;
+   /* top:80px; */
+   width: 100%;
+   z-index: 9999;
+}
+.nav-item,.tohide{
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   padding: 16px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+.tohide{
+   display: block;
+}
+.nav-item{
+   display: inline-block;
+}
+.tohide:hover{
+   background-color: burlywood;
+}
+.dropdown-menu:hover .menu-items {
+   display: block;
+}
+.dropdown-menu:hover .dropdown-btn {
+   background-color: black;
+}
 
- .nav-item:hover {
-    background-color: rgb(0, 0, 0);
- }
+.nav-item:hover {
+   background-color: rgb(0, 0, 0);
+}
 
- /* .sectionHeadNav{
-   position:fixed;
-   top:0px;
- } */
+/* .sectionHeadNav{
+  position:fixed;
+  top:0px;
+} */
 
-  .images{
+.images{
    /* top: 134px;  */
    /* position:fixed; */position:relative;
    width: 100%;
@@ -185,19 +181,30 @@
  }
 
  .card button:active{
-   background-color:rgb(250, 234, 230);
+   border-style: double;
+   background-color:rgb(250, 234, 230) ;
    border-color:rgb(0, 255, 76);
    color:rgb(0, 255, 76);
  }
  
 .card button::after{
-   background-color:rgb(250, 234, 230);
+   border-style: double;
+   background-color:rgb(250, 234, 230) ;
+   border-color:rgb(0, 255, 76);
+   color:rgb(0, 255, 76);
+   opacity: 0.2;
+   cursor:not-allowed;
+
+}
+
+.card button:visited{
+   border-style: double;
+   background-color:rgb(250, 234, 230) ;
    border-color:rgb(0, 255, 76);
    color:rgb(0, 255, 76);
    opacity: 0.2;
    cursor:not-allowed;
 }
-
  .product{
  width:100%;
  height:200px;
@@ -222,4 +229,13 @@
 
 .care{
    position: relative;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(58, 57, 57);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    bottom:0px;
+    width:100%
 }

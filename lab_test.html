@@ -1,188 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab test</title>
+  <link rel="stylesheet" href="./lab_test_styles.css">
 </head>
 <body>
+  <form class="form-validation" method="post" action="script.php">
+    <link rel="stylesheet" href="test.css">
+    <div class="sub-entry">
+        <!--Form details section-->
+        <h3>1. Your Contact Details</h3>
+        <div class="row">
 
-<div class="container">
-  <form action="/action_page.php">
-  <h3>1. Your Contact Details</h3>
-  <div class="row">
-  
-    <div class="col-25">
-      <input type="text" id="fullname" name="fullname" placeholder="Full Name">
-    </div>
-    
-     <div class="col-25">
-      <input type="text" id="patientid" name="patientid" placeholder="Patient Id if exists">
-    </div>
-    
-  </div>
-  <div class="row">
-   
-   <div class="col-25">
-      <input type="text" id="contactnum" name="contactnum" placeholder="Contact Number">
-    </div>
-    
-     <div class="col-25">
-      <input type="text" id="email" name="email" placeholder="Email id">
-    </div>
-    
-   <br>
-   <br>
-   <br>
-   
-   <h3>2. Address</h3>
-  <div class="row">
-  
-    <div class="col-25">
-      <input type="text" id="hnum" name="hnum" placeholder="H-No">
-    </div>
-    
-     <div class="col-25">
-      <input type="text" id="street" name="street" placeholder="Street">
-    </div>
-  </div>
-  
-   <div class="row">
-   
-   <div class="col-25">
-      <input type="text" id="area" name="area" placeholder="Area">
-    </div>
-  </div>
+            <div class="col-45">
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            </div>
 
-  <div class="row">
-    <div class="col-25">
-      <label for="country">District</label>
-    </div>
-  </div>
-  
-  <div class="row">
-  	<div class="col-25">
-      <select id="district" name="district">
-        <option value="choose">Choose</option>
-        <option value="kopargao">Kopargao</option>
-        <option value="chittoor">Chittoor</option>
-        <option value="thane">Thane</option>
-        <option value="bangalore">Bangalore</option>
-        <option value="pune">Pune</option>
-        <option value="mumbaisub">Mumbai Suburban</option>
-        <option value="barddhaman">Barddhaman</option>
-        <option value="ahmadabad">Ahmadabad</option>
-        <option value="murshidabad">Murshidabad</option>
-        <option value="bangalore">Bangalore</option>
-        <option value="jaipur">Jaipur</option>
-        <option value="nashik">Nashik</option>
-        <option value="surat">Surat</option>
-        <option value="allahabad">Allahabad</option>
-        <option value="medinipur">Medinipur</option>
-        <option value="patna">Patna</option>
-        <option value="hugli">Hugli</option>
-        <option value="rangareddy">Rangareddy</option>
-        <option value="nadia">Nadia</option>
-        <option value="eastgodavari">East Godavari</option>
-        <option value="guntur">Guntur</option>
-        <option value="haora">Haora</option>
-        <option value="belgaum">Belgaum</option>
-        <option value="moradabad">Moradabad</option>
-        <option value="ghaziabad">Ghaziabad</option>
-        <option value="nagpur">Nagpur</option>
-        <option value="chennai">Chennai</option>
-        <option value="lucknow">Lucknow</option>
-        <option value="krishna">Krishna</option>
-        <option value="ahmadnagar">Ahmadnagar</option>
-        <option value="kolkata">Kolkata</option>
-        <option value="agra">Agra</option>
-        <option value="gaya">Gaya</option>
-        <option value="anantapur">Anantapur</option>
-        <option value="raipur">Raipur</option>
-        <option value="kurnool">Kurnool</option>
-        <option value="hyderabad">Hyderabad</option>
-        <option value="mysore">Mysore</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Subject</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
+            <div class="col-45">
+                <input type="text" id="patientid" name="patientid" placeholder="Patient Id if exists">
+            </div>
 
+        </div>
+        <div class="row">
+
+            <div class="col-45">
+                <input type="text" id="contactnum" name="contactnum" placeholder="Contact Number">
+            </div>
+
+            <div class="col-45">
+                <input type="text" id="email" name="email" placeholder="Email id">
+            </div>
+        </div>
+        <h3>2. Address</h3>
+        <div class="row">
+
+            <div class="col-45">
+                <input type="text" id="hnum" name="hnum" placeholder="H-No">
+            </div>
+
+            <div class="col-45">
+                <input type="text" id="street" name="street" placeholder="Street">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-45">
+                <input type="text" id="area" name="area" placeholder="Area">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-45">
+                <label for="country">District</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-45">
+                <select id="district" name="district">
+                    <option value="choose">Choose</option>
+                    <option value="kopargao">Kopargao</option>
+                    <option value="chittoor">Chittoor</option>
+                    <option value="thane">Thane</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="pune">Pune</option>
+                    <option value="mumbaisub">Mumbai Suburban</option>
+                    <option value="barddhaman">Barddhaman</option>
+                    <option value="ahmadabad">Ahmadabad</option>
+                    <option value="murshidabad">Murshidabad</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="nashik">Nashik</option>
+                    <option value="surat">Surat</option>
+                    <option value="allahabad">Allahabad</option>
+                    <option value="medinipur">Medinipur</option>
+                    <option value="patna">Patna</option>
+                    <option value="hugli">Hugli</option>
+                    <option value="rangareddy">Rangareddy</option>
+                    <option value="nadia">Nadia</option>
+                    <option value="eastgodavari">East Godavari</option>
+                    <option value="guntur">Guntur</option>
+                    <option value="haora">Haora</option>
+                    <option value="belgaum">Belgaum</option>
+                    <option value="moradabad">Moradabad</option>
+                    <option value="ghaziabad">Ghaziabad</option>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="lucknow">Lucknow</option>
+                    <option value="krishna">Krishna</option>
+                    <option value="ahmadnagar">Ahmadnagar</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="agra">Agra</option>
+                    <option value="gaya">Gaya</option>
+                    <option value="anantapur">Anantapur</option>
+                    <option value="raipur">Raipur</option>
+                    <option value="kurnool">Kurnool</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mysore">Mysore</option>
+                </select>
+            </div>
+        </div>
+        <h3>3. Test type</h3>
+        <h6>(Choose atleast one)</h6>
+
+        <div class="row">
+            <div class="col-45">
+                <label>CBC
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="col-45">
+                <label>Complete Urine
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-45">
+                <label>Lipid Profile
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="col-45">
+                <label>Glucose Test
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-45">
+                <label>Thyroid Stimulating Harmone(TSH)
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <h3>4. Do you want a hard copy of the report also?</h3>
+        <div class="row">
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <h3>5. Date of test</h3>
+        <div class="row">
+
+            <label for="labtesttime">Date and time of test</label>
+            <input type="datetime-local" id="testtime" name="testtime">
+
+        </div>
+
+        <div class="row">
+            <div class="col-45"></div>
+            <div class="col-45">
+                <div class="col-45">
+                    <input type="submit" value="Reset">
+                </div>
+                <div class="col-45">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-entry">
+        <img class="labimg" src="./Images/Lab-Test/lab-test.jpg">
+    </div>
+</form>
 </body>
 </html>
-
-
