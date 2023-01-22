@@ -3,15 +3,19 @@
     padding:0;
 }
 
+
 .header{
-    /* position: fixed; */ position:relative;
+    /* position: fixed; */ position:relative fixed;
     width: 100%;
     text-align: center;
-    background-color: rgb(90, 25, 25);
-    color: rgb(240, 196, 175);
+    background-color: rgb(110, 108, 108);
+    color: whitesmoke;
     font-size: 70px;
     margin:0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top:50px;
 }
 
 .footer{
@@ -29,10 +33,11 @@
     background-color: #3f4141;
     color: white;
     padding: 16px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
  }
+
  .dropdown-menu {
     position: relative;
     display: inline-block;
@@ -46,7 +51,7 @@
  }
  .nav-bar{
     background-color: #3f4141;
-    /* position:fixed; */position:relative;
+    /* position:fixed; */position:fixed;
     /* top:80px; */
     width: 100%;
     z-index: 9999;
@@ -167,8 +172,8 @@
    border-width:2px;
    outline: 0;
    padding: 12px;
-   /* background-color: wheat;
-   color:brown; */
+   background-color: wheat;
+   color:brown;
    text-align: center;
    cursor: pointer;
    width: 100%;
@@ -182,12 +187,16 @@
  .card button:active{
    background-color:rgb(250, 234, 230);
    border-color:rgb(0, 255, 76);
+   color:rgb(0, 255, 76);
  }
  
- .card button:after{
+.card button::after{
    background-color:rgb(250, 234, 230);
    border-color:rgb(0, 255, 76);
- }
+   color:rgb(0, 255, 76);
+   opacity: 0.2;
+   cursor:not-allowed;
+}
 
  .product{
  width:100%;
